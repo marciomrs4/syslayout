@@ -6,7 +6,7 @@
 			</div>
 			<div class="panel-body">
 
-				<!-- Painel de ações -->
+				<!-- Painel de aï¿½ï¿½es -->
 
 				<ul class="nav nav-pills">
 					
@@ -14,7 +14,7 @@
 						<div class="btn-group">
 							<a href="<?php 
 							use system\core\ActionController as L;
-							echo L::actionUrl()->setProjecName($configGlobal['projectName'])
+							echo L::actionUrl()->setProjecName($configGlobal['path'])
 										  ->setUrlModulo($config['moduloName'])
 										  ->setUrlAction('cadastrar/Arquivo')
 										  ->setValue(10)
@@ -37,7 +37,7 @@
 <!-- 					<li class="dropdown">
 						<div class="btn-group">
 							<button type="button" class="btn btn-primary">
-								<span class="glyphicon glyphicon-list-alt"></span> Relatório
+								<span class="glyphicon glyphicon-list-alt"></span> Relatï¿½rio
 							</button>
 							<button type="button" class="btn btn-primary dropdown-toggle"
 								data-toggle="dropdown">
@@ -62,4 +62,4 @@
 			</div>
 		</div>
 				
-		<!-- Fim Painel de ações / Painel do Modulo-->
+		<!-- Fim Painel de aï¿½ï¿½es / Painel do Modulo-->

@@ -1,12 +1,12 @@
 <?php
 require_once 'autoload.php';
 
-
 $modulo = filter_input(INPUT_GET,'urlModulo');
 
 $action = filter_input(INPUT_GET,'urlAction');
 
 $value = filter_input(INPUT_GET,'urlValue');
+
 
 
 $_SESSION['path'] = $configGlobal['path'];

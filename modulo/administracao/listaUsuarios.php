@@ -33,5 +33,5 @@ $form = new FormController();
 $form->setForm()
 	 ->getForm();
 
-include '../../componente/rodape.php';
+include '../../layout/rodape.php';
 ?>

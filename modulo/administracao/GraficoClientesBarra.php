@@ -6,8 +6,8 @@ use system\app\Form;
 require_once '../../autoload.php';
 include_once 'config.php';
 
-include '../../componente/topo.php';
-include '../../componente/menuprincipal.php';
+include '../../layout/topo.php';
+include '../../layout/menuprincipal.php';
 
 include '../../modulo/administracao/ModuloAdministracao.php';
 
@@ -28,5 +28,5 @@ $OutroPainel->addGrid($form)
 			->setPainelColor('Novo')
 			->show();
 
-include '../../componente/rodape.php';
+include '../../layout/rodape.php';
 ?>
