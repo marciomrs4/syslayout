@@ -1,9 +1,9 @@
 <?php
 
-namespace system\app;
+namespace Mrs\app;
 
-use system\core\IGrid;
-use system\core\FormController;
+use Mrs\core\IGrid;
+use Mrs\core\FormController;
 /**
  *
  * @author marcio.santos

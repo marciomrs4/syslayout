@@ -19,4 +19,6 @@ $configGlobal['tituloRodape'] = '..:: Intranet stay ::..';
 /* Usado para indicar a pasta raiz do projeto*/
 $configGlobal['path'] = 'layout';
 
+include_once 'vendor/autoload.php';
+
 ?>
