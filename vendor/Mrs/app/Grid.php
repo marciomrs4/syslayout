@@ -1,8 +1,8 @@
 <?php
 
-namespace system\app;
+namespace Mrs\app;
 
-use system\core\IGrid;
+use Mrs\core\IGrid;
 /**
  *
  * @author marcio.santos

@@ -13,7 +13,7 @@
 					<li class="dropdown">
 						<div class="btn-group">
 							<a href="<?php 
-							use system\core\ActionController as L;
+							use Mrs\core\ActionController as L;
 							echo L::actionUrl()->setProjecName($configGlobal['path'])
 										  ->setUrlModulo($config['moduloName'])
 										  ->setUrlAction('cadastrar/doca')

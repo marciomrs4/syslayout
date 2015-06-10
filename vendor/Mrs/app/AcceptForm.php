@@ -1,11 +1,11 @@
 <?php
 
-namespace system\app;
+namespace Mrs\app;
 
 use Respect\Validation\Validator as v;
-use system\core\PostController;
-use system\model\TbUsuario;
-use system\entity\Doca;
+use Mrs\core\PostController;
+use Mrs\model\TbUsuario;
+use Mrs\entity\Doca;
 
 class AcceptForm extends PostController
 {
@@ -16,7 +16,7 @@ class AcceptForm extends PostController
 			
  			v::string()->notEmpty()
 					   ->setName('Doca')
-					   ->setTemplate('O campo {{name}} é obrigatório')
+					   ->setTemplate('O campo {{name}} ï¿½ obrigatï¿½rio')
 					   ->assert($this->post['doca']);
 
 			try {
@@ -54,7 +54,7 @@ class AcceptForm extends PostController
 	       v::string()->notEmpty()
 	                  ->email()
 	                  ->setName('Doca')
-	                  ->setTemplate('O valor {{name}} é obrigatório')
+	                  ->setTemplate('O valor {{name}} ï¿½ obrigatï¿½rio')
 	                  ->assert($this->post['doca']);
 	                  
             $Doca = new Doca();

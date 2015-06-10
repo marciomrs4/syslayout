@@ -2,8 +2,8 @@
 require_once '../../../autoload.php';
 
 
-use system\app\AcceptForm as Form;
-use system\core\FormController;
+use Mrs\app\AcceptForm as Form;
+use Mrs\core\FormController;
 
 
 
@@ -11,11 +11,9 @@ try {
 
 	$form = new Form();
 	
-	$form->setPost($_POST);
-
-	$form->cadastrarComercial();
+	$form->setPost($_POST)->cadastrarComercial();
 	
-	$form->clearPost()->router('../index.php');
+	$form->clearPost()->router();
 	
 } catch (Exception $e) {
 	
@@ -40,6 +38,10 @@ $form->setModulo($_SESSION['moduloTemp'])
 	 ->setAction($_SESSION['actionTemp'])
 	 ->setValue($_SESSION['valueTemp']);
 
-header('location: ../index.php');
+#header('location: ../index.php');
+
+
+
+
 
 }

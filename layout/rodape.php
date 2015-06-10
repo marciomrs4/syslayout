@@ -2,7 +2,7 @@
 
 <!-- Modal -->
 <?php 
-use system\core\Error as M;
+use Mrs\core\Error as M;
 $Message = new M();
 ?>
 <div class="modal fade in" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: <?php $Message->getDisplay(); ?>;">
@@ -26,7 +26,7 @@ $Message = new M();
   </div>
 </div>
 
-<!-- Inicio Rodapé -->
+<!-- Inicio Rodapï¿½ -->
 		<footer>
 			<nav class="navbar navbar-default navbar-fixed-bottom"
 				role="navigation">
@@ -45,7 +45,7 @@ $Message = new M();
 				</div>
 				<div class="nav navbar-right collapse navbar-collapse" id="este">
 					<button class="btn btn-default btn-lg">
-						<span class="glyphicon glyphicon-user"></span> Usuário
+						<span class="glyphicon glyphicon-user"></span> Usuï¿½rio
 					</button>
 				</div>
 

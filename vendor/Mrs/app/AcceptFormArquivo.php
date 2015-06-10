@@ -1,9 +1,9 @@
 <?php
 
-namespace system\app;
+namespace Mrs\app;
 
-use system\core\PostController;
-use system\entity\Arquivo;
+use Mrs\core\PostController;
+use Mrs\entity\Arquivo;
 
 class AcceptFormArquivo extends PostController
 {

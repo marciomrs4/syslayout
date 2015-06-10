@@ -1,6 +1,6 @@
 <?php
 
-namespace system\app;
+namespace Mrs\app;
 
 class Mvto
 {
@@ -9,17 +9,17 @@ class Mvto
 	{
 			return  substr($var, 0,9).'-'.
 					substr($var, 9,1).'-'.
-					#Linha abaixo é o DRT
+					#Linha abaixo ï¿½ o DRT
 					substr($var, 10,8).'-'.
-					#Linha abaixo é a Data: Dia
+					#Linha abaixo ï¿½ a Data: Dia
 					substr($var, 24,2).'/'.
-					#Linha abaixo é a Data: Mês
+					#Linha abaixo ï¿½ a Data: Mï¿½s
 					substr($var, 22,2).'/'.
-					#Linha abaixo é a Data: Ano
+					#Linha abaixo ï¿½ a Data: Ano
 					substr($var, 18,4).'-'.
-					#Linha abaixo é a Data: Hora
+					#Linha abaixo ï¿½ a Data: Hora
 					substr($var, 26,2).':'.
-					#Linha abaixo é a Data: Min
+					#Linha abaixo ï¿½ a Data: Min
 					substr($var, 28,2).'-'.
 					#Numero do relogio
 					substr($var, 30,2).'-'.
