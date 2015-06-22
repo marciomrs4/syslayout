@@ -1,9 +1,8 @@
 <?php
 
-namespace system\entity;
+namespace Mrs\entity;
 
 use Respect\Validation\Validator as V;
-use system\core\PostController;
 
 /**
  *
@@ -25,7 +24,7 @@ class Arquivo
 	    	V::string()->numeric()
 	    			   ->notEmpty()
 	    			   ->setName('Numercao')
-	    			   ->setTemplate('O campo {{name}} é obrigatório')
+	    			   ->setTemplate('O campo {{name}} ï¿½ obrigatï¿½rio')
 	    			   ->assert($numeracao); 
 	    			   
 	    			   $this->arq_numeracao = $numeracao;

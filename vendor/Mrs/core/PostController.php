@@ -17,6 +17,8 @@ abstract class PostController
 		{
 			$this->setpost($_SESSION['post']);
 		}
+
+        return $this;
 		
 	}
 	

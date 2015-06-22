@@ -3,7 +3,7 @@
 		<h3 class="panel-title">Novo</h3>
 	</div>
 	<div class="panel-body">
-		<form class="form-horizontal" method="post" action="" role="form">
+		<form class="form-horizontal" method="post" action="action/doca.php" role="form">
 			
 			<div class="form-group">
 				<label for="inputEmail3" class="col-sm-1 control-label">Doca:</label>
@@ -12,6 +12,14 @@
 						placeholder="Descricao">
 				</div>
 			</div>
+
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-1 control-label">Espaco:</label>
+                <div class="col-sm-4">
+                    <input type="text" name="espaco" value="" class="form-control" id="inputEmail3"
+                           placeholder="Espaco">
+                </div>
+            </div>
 			
 			<div class="form-group">
 				<div class="col-sm-offset-1 col-sm-1">

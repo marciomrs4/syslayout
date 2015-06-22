@@ -1,7 +1,12 @@
-	
-
 <!-- Modal -->
-<?php 
+<?php
+//Carrega dinamincamente os formularios
+
+$FormRequest = new \Mrs\core\FormController();
+$FormRequest->setForm()
+            ->getForm();
+
+//Instancia do objeto que mostra os erros da aplicacao
 use Mrs\core\Error as M;
 $Message = new M();
 ?>
@@ -13,10 +18,11 @@ $Message = new M();
         <h4 class="modal-title" id="myModalLabel">Mensagem</h4>
       </div>
       <div class="modal-body">
-           <?php 
-				$Message->showMessages();
-				$Message->showErrors();
-				$Message->clear();
+           <?php
+                //Metodos que se encarregam de mostrar os erros
+				$Message->showMessages()
+                        ->showErrors()
+                        ->clear();
 			?>
       </div>
       <div class="modal-footer">
@@ -45,7 +51,7 @@ $Message = new M();
 				</div>
 				<div class="nav navbar-right collapse navbar-collapse" id="este">
 					<button class="btn btn-default btn-lg">
-						<span class="glyphicon glyphicon-user"></span> Usu�rio
+						<span class="glyphicon glyphicon-user"></span> Usuário
 					</button>
 				</div>
 

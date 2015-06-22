@@ -7,7 +7,7 @@ class Error
 		
 	public function showErrors()
 	{
-		/* $erros = array();
+		$erros = array();
 		
 		if(isset($_SESSION['erro']) or isset($_SESSION['erros'])){
 		echo '<div class="alert alert-danger">';
@@ -19,9 +19,10 @@ class Error
 				}
 			}
 		echo '</div>';
-		} */
+		}
 		
-		echo 'Hello';
+		//echo 'Hello';
+        return $this;
 		
 	}
 
@@ -48,6 +49,8 @@ class Error
 		}
 
 		unset($_SESSION['message']);
+
+        return $this;
 	}
 	
 	public function validadeForm($formName)
