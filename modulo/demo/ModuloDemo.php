@@ -26,12 +26,12 @@
 
 									use Mrs\core\ActionController as A;
 
-									echo A::actionUrl()->setProjecName($configGlobal['projectName'])
+									echo A::actionUrl()->setProjecName($configGlobal['path'])
                                                        ->setUrlModulo($config['moduloName'])
-                                                       ->setUrlAction('cadastrar/doca')
+                                                       ->setUrlAction('cadastrar/usuario')
                                                        ->getUrl();
 									?>"><span class="glyphicon glyphicon-list-alt"></span>
-										Unidade Venda
+                                        Usuário
 									</a>
 								</li>
 
@@ -88,9 +88,9 @@
 							</button>
 							<ul class="dropdown-menu" role="menu">
 								<li>
-									<a href="listarUnidadeVenda.php"><span class="glyphicon glyphicon-list-alt">
+									<a href="listarUsuario.php"><span class="glyphicon glyphicon-list-alt">
 										</span>
-										Listar Unidade de Venda
+										Usuário
 									</a>
 								</li>
 <!--								<li>

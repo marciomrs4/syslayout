@@ -24,7 +24,7 @@ abstract class DataBase
 		}
 		catch (\PDOException $e)
 		{
-			error_log("Erro ao tentar conectar no banco de dados",3,"c:\Error_log_novo_ocomon");
+			error_log("Erro ao tentar conectar no banco de dados",3,"Error_Connect");
 			throw new \PDOException("ERRO: {$e->getMessage()} COD: {$e->getCode()} Arquivo {$e->getFile()}");
 		}
 		

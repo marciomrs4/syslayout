@@ -1,13 +1,11 @@
 <?php
-require_once 'autoload.php';
+require_once 'configGlobal.php';
 
 $modulo = filter_input(INPUT_GET,'urlModulo');
 
 $action = filter_input(INPUT_GET,'urlAction');
 
 $value = filter_input(INPUT_GET,'urlValue');
-
-
 
 $_SESSION['path'] = $configGlobal['path'];
 
@@ -24,6 +22,4 @@ $_SESSION['actionTemp'] = $action;
 $_SESSION['valueTemp'] = $value;
 
 header('location: '.$_SERVER['HTTP_REFERER']);
-
-
 ?>

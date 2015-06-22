@@ -49,15 +49,18 @@ abstract class PostController
 
 	public function listarpost()
 	{
+        $array  = '';
 		foreach ($this->post as $campo => $valor)
 		{
-			echo("
-					[ Campo:<font color='blue'> ( {$campo} )</font>  ] 
+			$array .= "
+					    [ Campo:<font color='blue'> ( {$campo} )</font> ]
 							- 
-				  	[ Valor:<font color='red'> ( {$valor} )</font>  ]
+				  	    [ Valor:<font color='red'> ( {$valor} )</font> ]
 				  <br />
-				");
+				";
 		}
+
+        return $array;
 	}
 
 	#Metodo para facilitar obter os nomes dos campos
@@ -75,16 +78,15 @@ abstract class PostController
 		
 		return($Array);
 	}
-	
-	public function clearPost($action, $message = 'Cadastrado com sucesso !')
-	{
-		unset($_SESSION['action'],$_SESSION[$action]);
 
-		$_SESSION['message'] = $message;
+    public function clearPost($message = 'Cadastrado com sucesso !', $rota = null)
+    {
+        $_SESSION['message'] = $message;
 
-		return $this;
+        $rota = ($rota == null) ? $_SERVER['HTTP_REFERER'] : $rota;
 
-	}
+        header("location: $rota");
+    }
 	
 	public function router($location=null)
 	{

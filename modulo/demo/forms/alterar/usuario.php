@@ -1,28 +1,28 @@
 <div class="panel panel-default">
 	<div class="panel-heading">
-		<h3 class="panel-title">Novo Usuário</h3>
+		<h3 class="panel-title">Novo Usu�rio</h3>
 	</div>
 	<div class="panel-body">
-		<form class="form-horizontal" method="post" action="action/usuario.php" role="form">
+		<form class="form-horizontal" method="post" action="" role="form">
 			<div class="form-group">
 				<label for="inputNomeUsuario" class="col-sm-2 control-label">Nome</label>
 				<div class="col-sm-4">
 					<input type="text" name="nomeUsuario" class="form-control"
-						id="inputNomeUsuario" placeholder="Nome do Usuário">
+						id="inputNomeUsuario" placeholder="Nome do Usuario">
 				</div>
 			</div>
 			<div class="form-group">
 				<label for="inputEmail" class="col-sm-2 control-label">Email</label>
 				<div class="col-sm-4">
 					<input type="email" name="email" class="form-control"
-						id="inputEmail" placeholder="Email do Usuário">
+						id="inputEmail" placeholder="Email do Usu�rio">
 				</div>
 			</div>
 			<div class="form-group">
 				<label for="inputRamal" class="col-sm-2 control-label">Ramal</label>
 				<div class="col-sm-4">
 					<input type="text" name="ramal" class="form-control"
-						id="inputRamal" placeholder="Ramal do Usuário">
+						id="inputRamal" placeholder="Ramal do Usu�rio">
 				</div>
 			</div>
 			<div class="form-group">
@@ -42,21 +42,21 @@
 				<label for="inputLogin" class="col-sm-2 control-label">Login</label>
 				<div class="col-sm-4">
 					<input type="text" name="login" class="form-control"
-						id="inputLogin" placeholder="Login do Usuário">
+						id="inputLogin" placeholder="Login do Usu�rio">
 				</div>
 			</div>
 			<div class="form-group">
 				<label for="inputSenha" class="col-sm-2 control-label">Senha</label>
 				<div class="col-sm-4">
 					<input type="password" name="senha" class="form-control"
-						id="inputSenha" placeholder="Senha do Usuário">
+						id="inputSenha" placeholder="Senha do Usu�rio">
 				</div>
 			</div>
 			<div class="form-group">
 				<label for="inputRepetirSenha" class="col-sm-2 control-label">Repetir Senha</label>
 				<div class="col-sm-4">
 					<input type="password" name="repetirSenha" class="form-control"
-						id="inputRepetirSenha" placeholder="Senha do Usuário">
+						id="inputRepetirSenha" placeholder="Senha do Usu�rio">
 				</div>
 			</div>
 			

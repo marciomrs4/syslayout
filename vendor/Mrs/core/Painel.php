@@ -15,7 +15,7 @@ class Painel
 	/**
 	 * 
 	 * @param string $title
-	 * @return \system\core\Grid
+	 * @return \Mrs\core\Grid
 	 * 
 	 * @example primary -
 				success -
