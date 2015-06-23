@@ -3,7 +3,7 @@
 		<h3 class="panel-title">Novo Usuário</h3>
 	</div>
 	<div class="panel-body">
-		<form class="form-horizontal" method="post" action="action/usuario.php" role="form">
+		<form class="form-horizontal" id="usuario" method="post" action="action/usuario.php" role="form">
 			<div class="form-group">
 				<label for="inputNomeUsuario" class="col-sm-2 control-label">Nome</label>
 				<div class="col-sm-4">
@@ -36,6 +36,7 @@
 						<option>Departamento 4</option>
 						<option>Departamento 5</option>
 					</select>
+
 				</div>
 			</div>
 			<div class="form-group">
@@ -73,9 +74,12 @@
 
 			<div class="form-group">
 				<div class="col-sm-offset-2 col-sm-1">
-					<button type="submit" class="btn btn-primary">
+					<button type="submit" id="botaoSave" class="btn btn-primary">
 						<span class="glyphicon glyphicon-floppy-saved"></span> Salvar
 					</button>
+                    <span id="imageSave" style="display: none;">
+                        <img src="../../img/495.GIF"/>
+                    </span>
 				</div>
 			</div>
 

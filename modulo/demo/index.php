@@ -6,7 +6,7 @@ include_once 'config.php';
 
 $file = new demo\app\AcceptFormDemoUsuario();
 
-$file->
+
 
 
 print_r($_SESSION);

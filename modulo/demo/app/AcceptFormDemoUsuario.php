@@ -11,8 +11,8 @@ class AcceptFormDemoUsuario extends PostController implements IAccepForm
 
     public function acceptForm()
     {
+       //throw new  \Exception('Deu erro aqui manolo ' . $this->listarpost());
 
-        throw new  \Exception("Deu erro aqui manolo ".$this->listarpost());
     }
 
 }

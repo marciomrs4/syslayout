@@ -5,16 +5,18 @@ include_once '../../../configGlobal.php';
 require_once '../../../vendor/autoload.php';
 
 
-//$post = new \De\app\AcceptFormDemoUsuario();
+//$post = new \De\form\AcceptFormDemoUsuario();
 
-$post = new \Mrs\app\AcceptFormDemoUsuario();
+$post = new \demo\app\AcceptFormDemoUsuario();
 
 try{
+
+    sleep(2);
 
     $post->setPost($_POST)
          ->acceptForm();
 
-    $post->clearPost();
+    $post->clearPost('Cadastrado com sucesso !','../listarUsuario.php');
 
 }catch (\Exception $e){
 

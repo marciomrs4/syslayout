@@ -30,7 +30,7 @@
                                                        ->setUrlModulo($config['moduloName'])
                                                        ->setUrlAction('cadastrar/usuario')
                                                        ->getUrl();
-									?>"><span class="glyphicon glyphicon-list-alt"></span>
+									?>"><span class="glyphicon glyphicon-plus-sign"></span>
                                         Usuário
 									</a>
 								</li>

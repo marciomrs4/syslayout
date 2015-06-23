@@ -10,8 +10,14 @@ class Painel
 	private $painelColor = 'default';
 	
 	private $grid;
-	
-	
+
+    public static $primary = 'primary';
+    public static $success = 'success';
+    public static $info = 'info';
+    public static $warning = 'warning';
+    public static $danger = 'danger';
+    public static $default = 'default';
+
 	/**
 	 * 
 	 * @param string $title
