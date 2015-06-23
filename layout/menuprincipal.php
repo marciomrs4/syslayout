@@ -18,7 +18,7 @@
 						<span class="glyphicon glyphicon-arrow-down"></span>
 					</button>
 					<ul class="dropdown-menu">
-						<li><a href="../demo/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+						<li><a href="../demo/"><span class="glyphicon glyphicon-home"></span> <?php echo($configGlobal['demo']); ?></a></li>
 
 <!--
                         <li><a href="../comercial/"><span class="glyphicon glyphicon-usd"></span> <?php /*echo $configGlobal['comercial']*/?></a></li>

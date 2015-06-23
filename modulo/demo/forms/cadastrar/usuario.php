@@ -28,7 +28,7 @@
 			<div class="form-group">
 				<label for="" class="col-sm-2 control-label">Departamento</label>
 				<div class="col-sm-2">
-					<select class="form-control">
+					<select name="departamento" class="form-control">
 						<option></option>
 						<option>Departamento 1</option>
 						<option>Departamento 2</option>

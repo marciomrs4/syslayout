@@ -5,6 +5,8 @@ include_once '../../../configGlobal.php';
 require_once '../../../vendor/autoload.php';
 
 
+//$post = new \De\app\AcceptFormDemoUsuario();
+
 $post = new \Mrs\app\AcceptFormDemoUsuario();
 
 try{

@@ -5,7 +5,7 @@ include_once '../../configGlobal.php';
 
 $config = array();
 //Variaveis do deste modulo
-$config['moduloName'] = 'demo';
+$config['moduloName'] = 'Demo';
 
 
 //Inclusao do Topo
