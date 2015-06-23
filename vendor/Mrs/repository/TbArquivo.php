@@ -1,32 +1,18 @@
 <?php
 
-namespace system\model;
+namespace Mrs\repostitory;
 
-use system\core\DataBase;
+use Mrs\core\DataBase;
 
-class TbArquivo extends DataBase
+interface RepositoryInterface
 {
 
-	private $tablename = 'tb_arquivo';
-	
-	public function findAll()
-	{
-		try {
-			
-			$stmt = $this->conexao->prepare("SELECT arq_codigo, arq_numeracao, 
-													arq_nome_fantasia, arq_emprestimo 
-												FROM $this->tablename");
-			
-			$stmt->execute();
-			
-			return $stmt->fetchAll(\PDO::FETCH_ASSOC);
-			
-		} catch (\Exception $e) {
-			throw new \Exception($e->getMessage(),$e->getCode());
-		}
+    public function insert(array $dados);
 
-		
-	}
-	
-	
+    public function update(array $dados);
+
+    public function delete($dados);
+
+    public function select();
+
 }
