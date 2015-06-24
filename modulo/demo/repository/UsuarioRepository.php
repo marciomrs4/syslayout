@@ -22,5 +22,14 @@ class UsuarioRepository
                ];
     }
 
+    public function selectStmt()
+    {
+
+        return [
+                    [1,'Departamento 1'],
+                    [2,'Departamento 2'],
+                    [3,'Departamento 3']
+                ];
+    }
 
 }

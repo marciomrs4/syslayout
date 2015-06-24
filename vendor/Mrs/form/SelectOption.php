@@ -26,6 +26,8 @@ class SelectOption
      */
     private $selectName;
 
+    private $class;
+
     /**
      * @var bool
      */
@@ -75,6 +77,21 @@ class SelectOption
     public function setSelectName($selectName)
     {
         $this->selectName = $selectName;
+        return $this;
+    }
+
+    /**
+     * @param $class
+     * @throws not
+     * @name setClass
+     * @return SelectOption
+     * @author Márcio Ramos
+     * @version 1.1.0
+     * @since 2015-06
+     */
+    public function setClass($class)
+    {
+        $this->class = $class;
         return $this;
     }
 
@@ -135,7 +152,7 @@ class SelectOption
      */
     public function listOption()
     {
-        echo '<select name="' . $this->selectName . '">';
+        echo '<select name="' . $this->selectName . '" class="'. $this->class .'">';
 
         $this->optionEmpty();
 

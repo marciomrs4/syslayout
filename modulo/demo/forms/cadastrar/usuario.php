@@ -28,14 +28,18 @@
 			<div class="form-group">
 				<label for="" class="col-sm-2 control-label">Departamento</label>
 				<div class="col-sm-2">
-					<select name="departamento" class="form-control">
-						<option></option>
-						<option>Departamento 1</option>
-						<option>Departamento 2</option>
-						<option>Departamento 3</option>
-						<option>Departamento 4</option>
-						<option>Departamento 5</option>
-					</select>
+					<?php
+
+                    $FormDepartamento = new \Mrs\form\SelectOption();
+
+                    $UserRepository = new \demo\repository\UsuarioRepository();
+
+                    $FormDepartamento->setStmt($UserRepository->selectStmt())
+                                     ->setClass('form-control')
+                                     ->setSelectName('departamento')
+                                     ->listOption();
+
+                    ?>
 
 				</div>
 			</div>

@@ -49,7 +49,7 @@ abstract class PostController
 
 	public function listarpost()
 	{
-        $array  = '<br/>';
+        $array  = '';
 		foreach ($this->post as $campo => $valor)
 		{
 			$array .= "

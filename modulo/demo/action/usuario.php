@@ -5,7 +5,7 @@ include_once '../../../configGlobal.php';
 require_once '../../../vendor/autoload.php';
 
 
-//$post = new \De\form\AcceptFormDemoUsuario();
+//$post = new \Mrs\core\PostController();
 
 $post = new \demo\app\AcceptFormDemoUsuario();
 
