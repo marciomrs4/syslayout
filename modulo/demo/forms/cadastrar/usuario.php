@@ -36,7 +36,8 @@
 
                     $FormDepartamento->setStmt($UserRepository->selectStmt())
                                      ->setClass('form-control')
-                                     ->setSelectName('departamento')
+                                     ->setSelectName('departamento1')
+                                     ->setOptionEmpty('Selecione','N')
                                      ->listOption();
 
                     ?>
