@@ -64,7 +64,7 @@ $Message = new M();
 		</footer>
 
 	</div>
-	<script src="../../js/jquery-1.11.1.min.js"></script>
+	<script src="../../js/jquery-1.11.3.js"></script>
 	<script src="../../js/bootstrap.js"></script>
 	<script src="../../js/jquery.dataTables.js"></script>
 	<script src="../../js/jquery.validate.js"></script>

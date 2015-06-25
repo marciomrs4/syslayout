@@ -73,7 +73,9 @@ class Painel
 		
 		echo("<div class='panel panel-{$this->getPainelColor()}'>
 					<div class='panel-heading'>
-						<h3 class='panel-title'>{$this->getPainelTitle()}</h3>
+						<h3 class='panel-title'>
+						   {$this->getPainelTitle()}
+						</h3>
 					</div>
 			  	<div class='panel-body'>");
 			$this->validateGrid($show);

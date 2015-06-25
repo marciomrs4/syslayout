@@ -52,7 +52,7 @@ class FormController
 		if(file_exists($this->form)){
 			include_once $this->form;			
 		}elseif($_SESSION['action']) {
-			echo 'File not found';
+            $_SESSION['erro'] = 'File not found';
 		}
 
 	}

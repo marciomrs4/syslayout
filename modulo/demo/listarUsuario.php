@@ -11,9 +11,9 @@ $ButtonOption = new \Mrs\core\GridOption();
 $lista = new demo\repository\UsuarioRepository;
 
 
-$ButtonOption->setIco('search')->setName('Procurar');
+$ButtonOption->setIco('search')->setName('Procurar')->setNameButton('#');
 
-$grid->setCabecalho(['Nome','Email','CPF'])
+$grid->setCabecalho(['#','Nome','Email','CPF'])
      ->setDados($Repository->select())
      ->addOption($ButtonOption);
 

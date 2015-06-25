@@ -10,8 +10,7 @@ class ActionController
 	
 	
 	protected $controler = 'FrontControler.php';
-	
-	private $url;
+
 	
 	public static function actionUrl()
 	{

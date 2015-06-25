@@ -1,6 +1,6 @@
 <?php
 
-namespace demo\app;
+namespace usuario\app;
 
 /**
  *

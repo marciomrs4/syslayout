@@ -10,15 +10,16 @@
 				</button>
 
 				<div class="btn-group">
-					<button class="btn btn-default btn-lg">
+					<button class="btn btn-default btn-sm">
 						<span class="glyphicon glyphicon-th-large"></span> <?php echo($configGlobal['projectName']);?>
 					</button>
 					<button data-toggle="dropdown"
-						class="btn btn-default btn-lg dropdown-toggle">
+						class="btn btn-default btn-sm dropdown-toggle">
 						<span class="glyphicon glyphicon-arrow-down"></span>
 					</button>
 					<ul class="dropdown-menu">
 						<li><a href="../demo/"><span class="glyphicon glyphicon-home"></span> <?php echo($configGlobal['demo']); ?></a></li>
+                        <li><a href="../usuario/"><span class="glyphicon glyphicon-home"></span> <?php echo($configGlobal['usuario']); ?></a></li>
 
 <!--
                         <li><a href="../comercial/"><span class="glyphicon glyphicon-usd"></span> <?php /*echo $configGlobal['comercial']*/?></a></li>
@@ -39,8 +40,10 @@
 			</div>
 			<div class="nav navbar-right collapse navbar-collapse"
 				id="navbar-collapse-1">
-				<button class="btn btn-default btn-lg ">
-					<span class="glyphicon glyphicon-off"></span> Sair
+				<button class="btn btn-default btn-sm">
+					<a href="../index/logout.php">
+                        <span class="glyphicon glyphicon-off"></span> Sair
+                    </a>
 				</button>
 			</div>
 		</nav>

@@ -5,7 +5,10 @@
     "autoload": {
 
         "psr-0": {"Mrs\\": "vendor/",
-                "demo\\": "modulo/"
+                "demo\\": "modulo/",
+                "usuario\\": "modulo/",
+                "services\\":"modulo/",
+                "container\\":"modulo/"
         }
     }
 }
