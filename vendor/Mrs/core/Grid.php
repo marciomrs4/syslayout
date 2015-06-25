@@ -215,7 +215,7 @@ class Grid implements IGrid
 	{
 		if($show){
 			$this->criarCabecalho()
-			->criarTabela();			
+			     ->criarTabela();
 		}
 
 	}

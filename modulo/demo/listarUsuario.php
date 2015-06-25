@@ -2,34 +2,26 @@
 //Include do config do modulo
 include_once 'config.php';
 
-
-
 $Repository = new \demo\repository\UsuarioRepository();
 
 $grid = new \Mrs\core\Grid();
 
+$ButtonOption = new \Mrs\core\GridOption();
+
+$lista = new demo\repository\UsuarioRepository;
+
+
+$ButtonOption->setIco('search')->setName('Procurar');
+
 $grid->setCabecalho(['Nome','Email','CPF'])
-     ->setDados($Repository->select());
+     ->setDados($Repository->select())
+     ->addOption($ButtonOption);
 
 
-$painel = new \Mrs\core\Painel();
-$painel->setPainelColor($painel::$primary);
-$painel->setPainelTitle('Lista de Usuários');
-$painel->addGrid($grid)
+$Painel = new \Mrs\core\Painel();
+$Painel->addGrid($grid)->setPainelTitle('Lista de Usuario')
+       ->setPainelColor('default')
        ->show(!isset($_SESSION['action']));
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
