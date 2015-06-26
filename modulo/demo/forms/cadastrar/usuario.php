@@ -82,8 +82,7 @@
 					<button type="submit" id="botaoSave" class="btn btn-primary">
 						<span class="glyphicon glyphicon-floppy-saved"></span> Salvar
 					</button>
-                    <span id="imageSave" style="display: none;">
-                        <img src="../../img/495.GIF"/>
+                    <span id="imageSave">
                     </span>
 				</div>
 			</div>

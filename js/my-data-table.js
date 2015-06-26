@@ -4,8 +4,8 @@ $table(document).ready(function(){
 	$table('#table-bootstrap').dataTable({
 		"oLanguage": {
 			"oPaginate":{
-				"sPrevious": "Anterior ",
-				"sNext": "Proximo"	
+				"sPrevious": " <span class='cursor-style'> Anterior </span>",
+				"sNext": "<span class='cursor-style'> Proximo </span>"
 					},
 				"sLengthMenu": "Mostrar _MENU_ resultado(s)",
 				"sSearch": "Pesquisar: ",

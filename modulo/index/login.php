@@ -10,7 +10,10 @@ if($_POST['usuario'] == 'marcio' or $_POST['usuario'] == 'clay'){
 		  </script>";
 //	header('location: /sgp/modulo/portaria');
 }else{
-	echo 'Seu usuario esta incorreto!';
+
+    echo '<div class="alert alert-danger" role="alert">
+            Seu usuario esta incorreto!
+          </div>';
 }
 
 ?>

@@ -28,9 +28,9 @@
 
 									use Mrs\core\ActionController as A;
 
-									echo A::actionUrl()->setProjecName($configGlobal['path'])
-                                                       ->setUrlModulo($config['moduloName'])
-                                                       ->setUrlAction('cadastrar/usuariocadastrar')
+									echo A::actionUrl()->setProjectPath($configGlobal['path'])
+                                                       ->setModulo($config['moduloName'])
+                                                       ->setAction('cadastrar/usuariocadastrar')
                                                        ->getUrl();
 									?>"><span class="glyphicon glyphicon-plus-sign"></span>
                                         Usuário

@@ -14,20 +14,18 @@ equalTo( other ): igual � um determinado valor
 
 var $valida = jQuery.noConflict();
 
-function submitForm(form){			
-	
-	$valida("#botaoSave").hide();
+function submitForm(form){
 
-    $valida("#imageSave").show();
+    $valida("#botaoSave").hide();
 
-	form.submit();
-	
+    $valida("#imageSave").html('<img src="../../img/241.GIF">');
+
+    form.submit();
 }
-
 
 $valida(document).ready( function() 
 {
-	
+
 	$valida("#usuario").validate({
 /*		  REGRAS DE VALIDA��O DO FORMUL�RIO */
 		rules:{
