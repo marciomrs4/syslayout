@@ -16,7 +16,7 @@ try{
     $post->setPost($_POST)
          ->acceptForm();
 
-    $post->clearPost('Cadastrado com sucesso !','../listarUsuario.php');
+    $post->clearPost('Cadastrado com sucesso !','../index.php');
 
 }catch (\Exception $e){
 

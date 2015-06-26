@@ -5,7 +5,7 @@ include_once '../../configGlobal.php';
 
 $config = array();
 //Variaveis do deste modulo
-$config['moduloName'] = 'Demo';
+$config['moduloName'] = 'Usuario';
 
 
 //Inclusao do Topo
@@ -14,5 +14,5 @@ include_once '../../layout/topo.php';
 include_once '../../layout/menuprincipal.php';
 
 //Inclusao do Menu do modulo
-include_once 'ModuloDemo.php';
+include_once 'ModuloUsuario.php';
 ?>

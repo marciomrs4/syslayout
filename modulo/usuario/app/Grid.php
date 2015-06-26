@@ -1,14 +1,13 @@
 <?php
 
-namespace Mrs\app;
+namespace usuario\app;
 
-use Mrs\core\IGrid;
 /**
  *
  * @author marcio.santos
  *        
  */
-class Grid implements IGrid
+class Grid implements \Mrs\core\IGrid
 {
 
 	private $text;

@@ -14,7 +14,9 @@ $configGlobal['systemName'] = '..:: Outra coisa::..';
 $configGlobal['tituloRodape'] = '..:: New Layout ::..';
 
 //Opcoes no menu principal
-$configGlobal['comercial'] = 'Comercial';
+$configGlobal['demo'] = 'Demo';
+
+$configGlobal['usuario'] = 'Usuário';
 
 $configGlobal['administracao'] = 'Administracao';
 

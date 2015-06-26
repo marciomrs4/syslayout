@@ -27,7 +27,8 @@
 								<button type="submit" class="btn btn-primary">
 									<span class="glyphicon glyphicon-log-in"></span> Acessar
 								</button>
-								<span id="carregando"></span>
+								<span id="carregando">
+                                </span>
 							</div>
 						</form>
 					</div>
@@ -48,7 +49,7 @@
 		
 	</div>
 	
-	<script src="../../js/jquery.js"></script>
+	<script src="../../js/jquery-1.11.3.js"></script>
 	<script src="../../js/jquery-form.js"></script>		
 	<script src="../../js/my-jquery-form.js"></script>			
 	

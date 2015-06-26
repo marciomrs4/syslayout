@@ -10,8 +10,14 @@ class Painel
 	private $painelColor = 'default';
 	
 	private $grid;
-	
-	
+
+    public static $primary = 'primary';
+    public static $success = 'success';
+    public static $info = 'info';
+    public static $warning = 'warning';
+    public static $danger = 'danger';
+    public static $default = 'default';
+
 	/**
 	 * 
 	 * @param string $title
@@ -67,7 +73,9 @@ class Painel
 		
 		echo("<div class='panel panel-{$this->getPainelColor()}'>
 					<div class='panel-heading'>
-						<h3 class='panel-title'>{$this->getPainelTitle()}</h3>
+						<h3 class='panel-title'>
+						   {$this->getPainelTitle()}
+						</h3>
 					</div>
 			  	<div class='panel-body'>");
 			$this->validateGrid($show);

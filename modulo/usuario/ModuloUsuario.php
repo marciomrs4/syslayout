@@ -90,7 +90,7 @@
 							</button>
 							<ul class="dropdown-menu" role="menu">
 								<li>
-									<a href="listarUsuario.php"><span class="glyphicon glyphicon-list-alt">
+									<a href="index.php"><span class="glyphicon glyphicon-list-alt">
 										</span>
 										Usuário
 									</a>
