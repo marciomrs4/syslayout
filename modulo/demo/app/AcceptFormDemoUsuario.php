@@ -16,10 +16,6 @@ class AcceptFormDemoUsuario extends PostController implements IAccepForm
             throw new  \Exception('Deu erro aqui manolo ' . $this->listarpost());
         }
 
-<<<<<<< HEAD:vendor/Mrs/app/AcceptFormDemoUsuario.php
-        //throw new  \Exception("Deu erro aqui manolo ".$this->listarpost());
-=======
->>>>>>> d9d745465faf5aae6bbce7e759c711c1b8682541:modulo/demo/app/AcceptFormDemoUsuario.php
     }
 
 }

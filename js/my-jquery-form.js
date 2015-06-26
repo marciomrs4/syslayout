@@ -5,12 +5,12 @@ $(document).ready(function(){
 		
 			var dados = $("#formlogin").serialize();
 		 
-			var icone = $('<img src="../../img/283.GIF">');
+			var icone = $('<img src="../../img/241.GIF">');
 
 
 			$.ajax({
 					type: "POST",
-					 url: "usuariocadastrar.php",
+					 url: "login.php",
 					data: dados,
 					
 					beforeSend: function()

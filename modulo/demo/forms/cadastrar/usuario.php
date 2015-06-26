@@ -7,7 +7,7 @@
 			<div class="form-group">
 				<label for="inputNomeUsuario" class="col-sm-2 control-label">Nome</label>
 				<div class="col-sm-4">
-					<input type="text" name="nomeUsuario" class="form-control"
+					<input type="text" name="nomeUsuario" class="form-control" value="<?php echo($_SESSION['demo/cadastrar/usuario']); ?>"
 						id="inputNomeUsuario" placeholder="Nome do Usuário">
 				</div>
 			</div>
