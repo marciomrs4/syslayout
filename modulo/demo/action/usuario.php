@@ -11,7 +11,7 @@ $post = new \demo\app\AcceptFormDemoUsuario();
 
 try{
 
-    sleep(2);
+    //sleep(2);
 
     $post->setPost($_POST)
          ->acceptForm();

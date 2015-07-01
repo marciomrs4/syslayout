@@ -13,4 +13,7 @@ $alert(document).ready(function(){
             $alert(this).next().toggle(1000);
         });
 
+
+        $alert('.alert-success').parent().parent().parent().parent().show(1000).fadeOut(3000);
+
 });
