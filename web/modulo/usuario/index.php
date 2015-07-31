@@ -31,5 +31,5 @@ echo ($D->format('%S') == '00') ? '' : $D->format('%S e Segundos');
 
 
 
-include_once '../../layout/rodape.php';
+include_once '../../../layout/rodape.php';
 ?>

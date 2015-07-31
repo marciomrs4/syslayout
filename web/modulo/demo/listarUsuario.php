@@ -15,11 +15,7 @@ print_r($_SESSION);
 $ButtonOption->setIco('search')
              ->setName('Procurar')
              ->setNameButton('Thais')
-             ->setUrl(\Mrs\core\ActionController::actionUrl()->setProjectPath($configGlobal['path'])
-                                                             ->setModulo($config['moduloName'])
-                                                             ->setAction('cadastrar/usuario')
-                                                             ->setValue()
-                                                             ->getUrl());
+             ->setUrl('formUsuario.php?valor=');
 
 $BotaoEditar = new \Mrs\core\GridOption();
 $BotaoEditar->setIco('edit')->setName('Editar');
@@ -36,5 +32,5 @@ $Painel->addGrid($grid)->setPainelTitle('Lista de Usuario')
 
 
 
-include_once '../../layout/rodape.php';
+include_once '../../../layout/rodape.php';
 ?>

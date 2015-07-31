@@ -1,5 +1,5 @@
 <?php
-include_once '../../configGlobal.php';
+include_once '../../../configGlobal.php';
 
 //
 
@@ -9,9 +9,9 @@ $config['moduloName'] = 'Demo';
 
 
 //Inclusao do Topo
-include_once '../../layout/topo.php';
+include_once '../../../layout/topo.php';
 //Inclusao do menu principal
-include_once '../../layout/menuprincipal.php';
+include_once '../../../layout/menuprincipal.php';
 
 //Inclusao do Menu do modulo
 include_once 'ModuloDemo.php';

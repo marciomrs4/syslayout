@@ -1,9 +1,6 @@
 <?php
 
-include_once '../../../configGlobal.php';
-
-require_once '../../../vendor/autoload.php';
-
+require_once '../../../../configGlobal.php';
 
 //$post = new \Mrs\core\PostController();
 
