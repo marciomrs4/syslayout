@@ -1,12 +1,12 @@
 <?php
-include_once '../../autoload.php';
+include_once '../../../app/configGlobal.php';
 
 
-sleep(2);
+//sleep(2);
 
 if($_POST['usuario'] == 'marcio' or $_POST['usuario'] == 'clay'){
 	echo "<script>
-			window.document.location.href = '../demo';
+			window.document.location.href = '/{$configGlobal['path']}/web/modulo/demo';
 		  </script>";
 //	header('location: /sgp/modulo/portaria');
 }else{

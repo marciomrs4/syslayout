@@ -17,5 +17,5 @@ if($user_id) {
 }
 
 
-include_once '../../../layout/rodape.php';
+include_once '../../../app/layout/rodape.php';
 ?>

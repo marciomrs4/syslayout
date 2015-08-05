@@ -25,6 +25,21 @@ $configGlobal['administracao'] = 'Administracao';
 $configGlobal['path'] = 'layout';
 
 //autoload global da aplicacao
-include_once 'vendor/autoload.php';
+include_once __DIR__.'/../vendor/autoload.php';
+
+//Function do topo
+function topo($config){
+    include_once '../../../app/layout/topo.php';
+}
+
+//Menu principal
+function menu($configGlobal){
+    include_once '../../../app/layout/menuprincipal.php';
+}
+
+//Function do footer
+function footer($configGlobal) {
+    include_once '../../../app/layout/rodape.php';
+}
 
 ?>

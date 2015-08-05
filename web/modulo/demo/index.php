@@ -24,7 +24,6 @@ print_r($data);
 
 
 
-
-
-include_once '../../../layout/rodape.php';
+//Inclusao do footer
+footer();
 ?>

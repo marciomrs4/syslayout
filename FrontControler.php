@@ -1,5 +1,5 @@
 <?php
-require_once 'configGlobal.php';
+require_once 'app/configGlobal.php';
 
 $modulo = filter_input(INPUT_GET,'urlModulo');
 

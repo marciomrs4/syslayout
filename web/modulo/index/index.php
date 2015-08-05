@@ -1,5 +1,5 @@
 <?php
-include_once '../../../configGlobal.php';
+include_once '../../../app/configGlobal.php';
 
 use Mrs\core\FormController;
 $Form = new FormController();

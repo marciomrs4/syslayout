@@ -32,5 +32,5 @@ $Painel->addGrid($grid)->setPainelTitle('Lista de Usuario')
 
 
 
-include_once '../../../layout/rodape.php';
+footer();
 ?>

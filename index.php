@@ -1,5 +1,5 @@
 <?php
-include_once 'configGlobal.php';
+include_once 'app/configGlobal.php';
 
 header("location: /{$configGlobal['path']}/web/modulo/index");
 

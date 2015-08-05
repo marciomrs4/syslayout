@@ -1,17 +1,12 @@
 <?php
 
-include_once '../../../configGlobal.php';
-
-require_once '../../../vendor/autoload.php';
-
-
-//$post = new \Mrs\core\PostController();
+include_once '../../../../app/configGlobal.php';
 
 $post = new \demo\app\AcceptFormDemoUsuario();
 
 try{
 
-    sleep(2);
+    //sleep(2);
 
     $post->setPost($_POST)
          ->acceptForm();
