@@ -2,20 +2,24 @@
 //Include do config do modulo
 include_once 'config.php';
 
-$Repository = new \demo\repository\UsuarioRepository();
+$Repository = new app\demo\repository\UsuarioRepository();
 
 $grid = new \Mrs\core\Grid();
 
 $ButtonOption = new \Mrs\core\GridOption('');
 
-$lista = new demo\repository\UsuarioRepository;
+$lista = new app\demo\repository\UsuarioRepository;
 
 print_r($_SESSION);
 
 $ButtonOption->setIco('search')
              ->setName('Procurar')
              ->setNameButton('Thais')
-             ->setUrl('formUsuario.php?valor=');
+             ->setUrl(\Mrs\core\ActionController::actionUrl()->setProjectPath($configGlobal['path'])
+                                                             ->setModulo($config['moduloName'])
+                                                             ->setAction('alterar/usuario')
+                                                             ->setValue()
+                                                             ->getUrl());
 
 $BotaoEditar = new \Mrs\core\GridOption();
 $BotaoEditar->setIco('edit')->setName('Editar');

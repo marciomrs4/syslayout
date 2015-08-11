@@ -1,10 +1,10 @@
 <?php
 
-require_once '../../../../configGlobal.php';
+require_once '../../../../app/configGlobal.php';
 
 //$post = new \Mrs\core\PostController();
 
-$post = new \demo\app\AcceptFormDemoUsuario();
+$post = new app\demo\app\AcceptFormDemoUsuario();
 
 try{
 

@@ -43,7 +43,7 @@ class FormController
 		$form_value = null;
 		extract($_SESSION,EXTR_PREFIX_ALL,'form');
 		$this->value = ($value != null) ? $value : $form_value;
-		$_SESSION['value'] = $this->value;
+		$_SESSION['value/'. $this->modulo . '/' . $this->action ] = $this->value;
 		return $this;
 	}
 	
@@ -68,20 +68,5 @@ class FormController
 		
 		return $this;
 		
-	}
-	
-	
-	private function validateSet($var)
-	{
-		if(isset($var)){
-			return $var;
-		}else{
-			return null;
-		}
-	}
-	
-	private function satinizePath($path)
-	{
-		filter_var($path,FILTER_SANITIZE_URL);
 	}
 }

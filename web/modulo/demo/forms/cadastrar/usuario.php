@@ -32,7 +32,7 @@
 
                     $FormDepartamento = new \Mrs\form\SelectOption();
 
-                    $UserRepository = new \demo\repository\UsuarioRepository();
+                    $UserRepository = new app\demo\repository\UsuarioRepository();
 
                     $FormDepartamento->setStmt($UserRepository->selectStmt())
                                      ->setClass('form-control')
