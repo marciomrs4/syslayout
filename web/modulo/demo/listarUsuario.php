@@ -32,5 +32,5 @@ $Painel->addGrid($grid)->setPainelTitle('Lista de Usuario')
 
 
 
-footer();
+footer($configGlobal);
 ?>

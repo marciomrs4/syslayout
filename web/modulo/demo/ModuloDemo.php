@@ -24,7 +24,14 @@
 							</button>
 							<ul class="dropdown-menu" role="menu">
 
-								<li><a href="formUsuario.php"><span class="glyphicon glyphicon-plus-sign"></span>
+								<li><a href="<?php
+                                    $url = new \Mrs\core\ActionController();
+                                    echo $url->setProjectPath($configGlobal['path'])
+                                        ->setModulo($config['moduloName'])
+                                        ->setAction('cadastrar/usuario')
+                                        ->setValue(rand(1,10))
+                                        ->getUrl();
+                                    ?>"><span class="glyphicon glyphicon-plus-sign"></span>
                                         Usuário
 									</a>
 								</li>

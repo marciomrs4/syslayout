@@ -6,7 +6,7 @@
  * Time: 18:06
  */
 
-namespace services\money;
+namespace app\services\money;
 
 class Money
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Mrs\app;
+namespace app\demo\app;
 
 
 use Mrs\core\IGrid;

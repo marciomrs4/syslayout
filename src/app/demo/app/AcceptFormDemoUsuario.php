@@ -1,6 +1,6 @@
 <?php
 
-namespace demo\app;
+namespace app\demo\app;
 
 use Mrs\core\IAccepForm;
 use Mrs\core\PostController;

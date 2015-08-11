@@ -9,7 +9,7 @@ $config['moduloName'] = 'Demo';
 
 
 //Inclusao do Topo
-topo();
+topo($config);
 
 //Inclusao do menu principal
 menu($configGlobal);

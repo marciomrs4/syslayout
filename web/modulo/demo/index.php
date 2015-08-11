@@ -4,17 +4,14 @@ include_once 'config.php';
 
 
 
-$file = new demo\app\AcceptFormDemoUsuario();
+$file = new app\demo\app\AcceptFormDemoUsuario();
 
 
-$container = new \container\Container();
+//print_r($data);
 
-$data = $container->get('UserRepository')->selectStmt();
-
-print_r($data);
-
-//print_r($_SESSION);
-
+echo '<pre>';
+print_r($_SESSION);
+echo '</pre>';
 
 
 
@@ -25,5 +22,5 @@ print_r($data);
 
 
 //Inclusao do footer
-footer();
+footer($configGlobal);
 ?>

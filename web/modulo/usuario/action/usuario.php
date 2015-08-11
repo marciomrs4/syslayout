@@ -2,7 +2,7 @@
 
 include_once '../../../../app/configGlobal.php';
 
-$post = new \demo\app\AcceptFormDemoUsuario();
+$post = new app\demo\app\AcceptFormDemoUsuario();
 
 try{
 

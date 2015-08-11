@@ -1,6 +1,6 @@
 <?php
 
-namespace demo\repository;
+namespace app\demo\repository;
 
 
 
@@ -18,9 +18,14 @@ class UsuarioRepository
                  'cpf' => '987654321'],
                 ['name' => 'Novo Nome',
                  'email' => 'novo@infotek.com',
-                 'cpf' => '65478931']
+                 'cpf' => '65478931'],
+                ['name' => 'UTF8',
+                'email' => 'áóíẃéõãìàÀÒÌÙÈÈÂÔ áóíẃéõãìàÀÒÌÙÈÈÂÔ áóíẃéõ',
+                'cpf' => '65478931']
                ];
     }
+
+    //áóíẃéõãìàÀÒÌÙÈÈÂÔ áóíẃéõãìàÀÒÌÙÈÈÂÔ áóíẃéõ
 
     public function selectStmt()
     {

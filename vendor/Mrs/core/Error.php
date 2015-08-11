@@ -68,8 +68,8 @@ class Error
 		$action = $_SESSION['action'];
 		
 		unset($_SESSION['action'],$_SESSION['modulo'],
-			  $_SESSION['value'],$_SESSION['erro'],
-			  $_SESSION['erros'],$_SESSION[$modulo.'/'.$action]);
+			  $_SESSION['erro'],$_SESSION['erros'],
+              $_SESSION['value/'.$modulo.'/'.$action]);
 	}
 	
 }

@@ -4,6 +4,8 @@ session_start();
 //Setando o time da aplicacao
 date_default_timezone_set('America/Sao_Paulo');
 
+require_once 'security.php';
+
 
 $configGlobal = array();
 //Nome do projeto, fica no topo lado esquerdo

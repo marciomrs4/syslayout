@@ -1,6 +1,6 @@
 <div class="panel panel-default">
 	<div class="panel-heading">
-		<h3 class="panel-title">Editar Usu�rio</h3>
+		<h3 class="panel-title">Editar Usuário <?php echo $user_id; ?> </h3>
 	</div>
 	<div class="panel-body">
 		<form class="form-horizontal" method="post" action="" role="form">

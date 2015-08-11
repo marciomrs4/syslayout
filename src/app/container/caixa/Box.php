@@ -6,7 +6,7 @@
  * Time: 18:13
  */
 
-namespace container\caixa;
+namespace app\container\caixa;
 
 class Box
 {

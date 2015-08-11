@@ -1,6 +1,6 @@
 <?php
 
-namespace demo\app;
+namespace app\demo\app;
 
 /**
  *
