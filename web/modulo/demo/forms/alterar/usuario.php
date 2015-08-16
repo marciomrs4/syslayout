@@ -3,7 +3,7 @@
 		<h3 class="panel-title">Editar Usuário <?php echo $_SESSION['value/demo/alterar/usuario']; ?> </h3>
 	</div>
 	<div class="panel-body">
-		<form class="form-horizontal" method="post" action="" role="form">
+		<form class="form-horizontal" method="post" action="action/usuario.php" role="form">
 			<div class="form-group">
 				<label for="inputNomeUsuario" class="col-sm-2 control-label">Nome</label>
 				<div class="col-sm-4">

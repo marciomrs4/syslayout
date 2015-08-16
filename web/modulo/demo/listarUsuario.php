@@ -2,27 +2,27 @@
 //Include do config do modulo
 include_once 'config.php';
 
-$Repository = new app\demo\repository\UsuarioRepository();
-
-$grid = new \Mrs\core\Grid();
+$url = \Mrs\core\ActionController::actionUrl()->setProjectPath($configGlobal['path'])
+                ->setModulo($config['moduloName'])
+                ->setAction('alterar/usuario')
+                ->setValue()
+                ->getUrl();
 
 $ButtonOption = new \Mrs\core\GridOption('');
-
-$lista = new app\demo\repository\UsuarioRepository;
-
-print_r($_SESSION);
-
 $ButtonOption->setIco('search')
              ->setName('Procurar')
              ->setNameButton('Thais')
-             ->setUrl(\Mrs\core\ActionController::actionUrl()->setProjectPath($configGlobal['path'])
-                                                             ->setModulo($config['moduloName'])
-                                                             ->setAction('alterar/usuario')
-                                                             ->setValue()
-                                                             ->getUrl());
+             ->setUrl($url);
 
-$BotaoEditar = new \Mrs\core\GridOption();
-$BotaoEditar->setIco('edit')->setName('Editar');
+$BotaoEditar = new \Mrs\core\GridOption('');
+$BotaoEditar->setIco('edit')
+            ->setName('Editar')
+            ->setUrl($url);
+
+
+$Repository = new app\demo\repository\UsuarioRepository();
+
+$grid = new \Mrs\core\Grid();
 
 $grid->setCabecalho(['#','Nome','Email','CPF'])
      ->setDados($Repository->select())
