@@ -50,7 +50,8 @@ class Grid implements IGrid
 	 * @example Nomes para o titulo de cada coluna
 	 * cabecalho = titulodascolunas
 	 */
-			
+
+
 	private $cabecalho;
 
 	private $function = array();
@@ -78,7 +79,7 @@ class Grid implements IGrid
 		$this->dados = $dados;
 		return $this;
 	}
-	
+
 	public function setCabecalho($cabecalho)
 	{
 		$this->cabecalho = $cabecalho;
@@ -97,7 +98,8 @@ class Grid implements IGrid
 	private function criarCabecalho()
 	{
 
-		echo("<table class='{$this->css}' id='{$this->id}'>
+		echo("<div class='table-responsive'>
+               <table class='{$this->css}' id='{$this->id}'>
 				<thead>
 					<tr class='active'>");				
 				foreach ($this->cabecalho as $cabecalho):
@@ -159,7 +161,7 @@ class Grid implements IGrid
 			$colunas = count($campo);
 			
 			#Serve para mostrar o Option se for uma instancia de IOption
-			if($this->option[0] instanceof IOption){
+			if($this->option['0'] instanceof IOption){
 				$enableOption = 1;				
 			}
 
@@ -173,7 +175,7 @@ class Grid implements IGrid
    				    	echo '<td class="col-md-1">
 								<div class="btn-group">
 	           						<button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
-	               						Op��es <span class="caret"></span>
+	               						' . $this->option['0']->getNameButton() .' <span class="caret"></span>
 	           						</button>
 	             				<ul class="dropdown-menu" role="menu">';    				    	
 					             foreach ($this->option as $option){
@@ -197,7 +199,8 @@ class Grid implements IGrid
 		}
 		
 		echo('</tbody>
-			</table>');
+			</table>
+		   </div>');
 	}
 	
 	public function addOption(IOption $option)
@@ -215,7 +218,7 @@ class Grid implements IGrid
 	{
 		if($show){
 			$this->criarCabecalho()
-			->criarTabela();			
+			     ->criarTabela();
 		}
 
 	}

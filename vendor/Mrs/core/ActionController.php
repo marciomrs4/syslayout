@@ -3,46 +3,47 @@ namespace Mrs\core;
 
 class ActionController
 {
-	protected $projectName;
-	protected $urlModulo;
-	protected $urlAction;
-	protected $urlValue;
+	protected $path;
+	protected $modulo;
+	protected $action;
+	protected $value;
 	
 	
 	protected $controler = 'FrontControler.php';
-	
-	private $url;
+
 	
 	public static function actionUrl()
 	{
         return  new ActionController();
 	}
+
 	
-	public function setProjecName($projectName)
+	public function setProjectPath($path)
 	{
-		$this->projectName = '/'.strtolower($projectName).'/'.$this->controler;
+
+		$this->path = '/'.strtolower($path).'/'.$this->controler;
 		return $this;
 	}
 
-	public function setUrlModulo($urlModulo)
+	public function setModulo($modulo)
 	{
-		$this->urlModulo = '?urlModulo='.strtolower($urlModulo);
+		$this->modulo = '?urlModulo='.strtolower($modulo);
 		return $this;
 	}
 	
-	public function setUrlAction($urlAction)
+	public function setAction($action)
 	{
-		$this->urlAction = '&urlAction='.strtolower($urlAction);
+		$this->action = '&urlAction='.strtolower($action);
 		return $this;
 	}
 	
-	public function setValue($urlValue=null)
+	public function setValue($value=null)
 	{
-	    if($urlValue){
-	        settype($urlValue, 'int');	        
+	    if($value){
+	        settype($value, 'int');
 	    }
 
-		$this->urlValue = '&urlValue='.$urlValue;
+		$this->value = '&urlValue='.$value;
 		return $this;
 	}
 	
@@ -53,10 +54,10 @@ class ActionController
 	
 	public function getUrl()
 	{
-	  return $this->__get('projectName').
-		     $this->__get('urlModulo').
-		     $this->__get('urlAction').
-		     $this->__get('urlValue');
+	  return $this->__get('path').
+		     $this->__get('modulo').
+		     $this->__get('action').
+		     $this->__get('value');
 		     
 		
 	}
