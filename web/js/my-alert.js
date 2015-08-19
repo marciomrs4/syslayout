@@ -8,10 +8,17 @@ $alert(document).ready(function(){
 	});
 
     //Encolhe os paineis do sistema de forma padrao
-    $alert(".panel-heading").click(
+    $alert(document).on('click','.panel-heading',
         function(){
             $alert(this).next().toggle(1000);
         });
+
+    //Encolhe os paineis do sistema de forma padrao
+   /* $alert(document).on({
+        click: function(){
+            $alert('.panel-heading').next().toggle(1000);
+        }
+    });*/
 
 
         $alert('.alert-success').parent().parent().parent().parent().hide(3000);

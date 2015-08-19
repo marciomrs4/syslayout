@@ -13,7 +13,11 @@ try{
     $post->setPost($_POST)
          ->acceptForm();
 
-    $post->clearPost('Cadastrado com sucesso !','../listarUsuario.php');
+
+    //header('Content-Type: application/json');
+    echo json_encode($post->returnArray());
+
+   // $post->clearPost('Cadastrado com sucesso !','../listarUsuario.php');
 
 }catch (\Exception $e){
 
@@ -33,12 +37,14 @@ try{
 
     }
 
-    $form = new \Mrs\core\FormController();
+    print_r($_SESSION['erro'],$_SESSION['erros']);
+
+/*    $form = new \Mrs\core\FormController();
     $form->setModulo($_SESSION['moduloTemp'])
          ->setAction($_SESSION['actionTemp'])
-         ->setValue($_SESSION['valueTemp']);
+         ->setValue($_SESSION['valueTemp']);*/
 
-    header('location: '.$_SERVER['HTTP_REFERER']);
+    //header('location: '.$_SERVER['HTTP_REFERER']);
 
 }
 

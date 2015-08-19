@@ -71,6 +71,7 @@ $Message = new M();
 	<script src="../../js/my-data-table.js"></script>
 	<script src="../../js/my-alert.js"></script>	
 	<script src="../../js/my-validator.js"></script>
+    <script src="../../js/my-jquery-formload.js"></script>
 				
 </body>
 </html>

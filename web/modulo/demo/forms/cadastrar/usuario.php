@@ -3,7 +3,7 @@
 		<h3 class="panel-title">Novo Usuário</h3>
 	</div>
 	<div class="panel-body">
-		<form class="form-horizontal" id="usuario" method="post" action="action/usuario.php" role="form">
+		<form class="form-horizontal" id="usuario" role="form">
 			<div class="form-group">
 				<label for="inputNomeUsuario" class="col-sm-2 control-label">Nome</label>
 				<div class="col-sm-4">

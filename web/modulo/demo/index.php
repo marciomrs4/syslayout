@@ -1,21 +1,25 @@
 <?php
 //Include do config do modulo
 include_once 'config.php';
+?>
+
+    <div id="load"></div>
+
+<?php
 
 
+?>
 
-$file = new app\demo\app\AcceptFormDemoUsuario();
+<div id="demo"></div>
+
+<?php
 
 
-//print_r($data);
 
 echo '<pre>';
-//print_r($_SESSION);
+//print_r($data);
+print_r($_POST);
 echo '</pre>';
-
-
-
-
 
 
 

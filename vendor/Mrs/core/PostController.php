@@ -63,6 +63,18 @@ abstract class PostController
         return $array;
 	}
 
+    public function returnArray()
+    {
+        $array  = array();
+
+        foreach ($this->post as $campo => $valor)
+        {
+            $array[] = array($campo => $valor);
+        }
+
+        return $array;
+    }
+
 	#Metodo para facilitar obter os nomes dos campos
 	public function criarCampos()
 	{
